@@ -12,6 +12,7 @@
 		CDF478082C1B4C9A00F77CF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF478072C1B4C9A00F77CF7 /* ContentView.swift */; };
 		CDF4780A2C1B4C9B00F77CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF478092C1B4C9B00F77CF7 /* Assets.xcassets */; };
 		CDF4780D2C1B4C9B00F77CF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF4780C2C1B4C9B00F77CF7 /* Preview Assets.xcassets */; };
+		CDF4781B2C1B517A00F77CF7 /* WorkoutInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF4781A2C1B517A00F77CF7 /* WorkoutInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,9 @@
 		CDF478072C1B4C9A00F77CF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDF478092C1B4C9B00F77CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF4780C2C1B4C9B00F77CF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CDF478172C1B4CDA00F77CF7 /* GlassWorkout Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GlassWorkout Watch App.entitlements"; sourceTree = "<group>"; };
+		CDF4781A2C1B517A00F77CF7 /* WorkoutInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutInterfaceController.swift; sourceTree = "<group>"; };
+		CDF4781C2C1B54FF00F77CF7 /* GlassWorkout-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GlassWorkout-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,9 @@
 		CDF478042C1B4C9A00F77CF7 /* GlassWorkout Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CDF4781C2C1B54FF00F77CF7 /* GlassWorkout-Watch-App-Info.plist */,
+				CDF478172C1B4CDA00F77CF7 /* GlassWorkout Watch App.entitlements */,
+				CDF4781A2C1B517A00F77CF7 /* WorkoutInterfaceController.swift */,
 				CDF478052C1B4C9A00F77CF7 /* GlassWorkoutApp.swift */,
 				CDF478072C1B4C9A00F77CF7 /* ContentView.swift */,
 				CDF478092C1B4C9B00F77CF7 /* Assets.xcassets */,
@@ -193,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDF478082C1B4C9A00F77CF7 /* ContentView.swift in Sources */,
+				CDF4781B2C1B517A00F77CF7 /* WorkoutInterfaceController.swift in Sources */,
 				CDF478062C1B4C9A00F77CF7 /* GlassWorkoutApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,13 +335,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GlassWorkout Watch App/GlassWorkout Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GlassWorkout Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = LR23F9534M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GlassWorkout-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GlassWorkout;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "The app reads workout data to send it to your ActiveLook glasses";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app reads workout data to send it to your ActiveLook glasses";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app reads workout data to send it to your ActiveLook glasses";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,13 +370,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GlassWorkout Watch App/GlassWorkout Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GlassWorkout Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = LR23F9534M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GlassWorkout-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GlassWorkout;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "The app reads workout data to send it to your ActiveLook glasses";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app reads workout data to send it to your ActiveLook glasses";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app reads workout data to send it to your ActiveLook glasses";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
